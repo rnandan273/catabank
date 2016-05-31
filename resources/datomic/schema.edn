@@ -1,0 +1,150 @@
+;;[entity, attribute, value, time]
+[{:db/id #db/id[:db.part/db]
+ :db/ident :person/name
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "A person's name"
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id[:db.part/db]
+ :db/ident :person/account
+ :db/valueType :db.type/ref
+ :db/cardinality :db.cardinality/many
+ :db/doc "The accounts for person"
+ :db.install/_attribute :db.part/db}
+
+{:db/id #db/id[:db.part/db]
+ :db/ident :account/name
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "THe acount holder's name"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :product/name
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The product's name"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :product/code
+ :db/valueType :db.type/long
+ :db/cardinality :db.cardinality/one
+ :db/doc "The product code as long number"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :product/trendcat
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/many
+ :db/doc "The product trend category"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :product/productcat
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The product category"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :product/color
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/many
+ :db/doc "The product color"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :product/desc
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The product desc"
+ :db.install/_attribute :db.part/db}
+
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/trend
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The trend"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/fit
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The fit"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/top
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style top"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/bottom
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style bottom"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/colour
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style colour"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/dress
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style dress"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/footwear
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style footwear"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/accessory
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style accessory"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :style/prints
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The style prints"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :family/member
+ :db/valueType :db.type/string
+ :db/cardinality :db.cardinality/one
+ :db/doc "The member"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :family/father
+ :db/valueType :db.type/ref
+ :db/cardinality :db.cardinality/one
+ :db/doc "The father ref"
+ :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+ :db/ident :family/son
+ :db/valueType :db.type/ref
+ :db/cardinality :db.cardinality/one
+ :db/doc "The son ref"
+ :db.install/_attribute :db.part/db}
+
+ ]
